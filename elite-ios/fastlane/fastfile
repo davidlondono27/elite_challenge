@@ -1,0 +1,76 @@
+require 'xcresult'
+
+# Global variables
+scheme = "elite-ios-Dev"
+derived_data_path = "DerivedData"
+packages_dependencies_path = "SourcePackages"
+target_device = "iPhone 15"
+xcodes(
+  version: "15.2",
+  select_for_current_build_only: true
+)
+
+platform :ios do
+  # Run tests ------------------------------------------------------
+
+  desc "Run Tests"
+  lane :tests do |options|
+    build_configuration = "Debug"
+    skip_spm_resolution = options[:skip_spm_resolution].nil? ? false : options[:skip_spm_resolution]
+    fail_build = options[:fail_build].nil? ? true : options[:fail_build]
+    output_directory = "build/reports/tests/#{scheme}"
+    begin
+      # Run tests
+      run_tests(
+        scheme: scheme,
+        device: target_device,
+        derived_data_path: derived_data_path,
+        cloned_source_packages_path: packages_dependencies_path,
+        skip_package_dependencies_resolution: skip_spm_resolution,
+        fail_build: fail_build,
+        code_coverage: true,
+        result_bundle: true,
+        output_directory: output_directory,
+        xcargs: "IS_FASTLANE=1 -skipPackagePluginValidation -skipMacroValidation"
+      )
+    end
+    create_coverage_reports()
+  end
+
+  # Create coverage reports ----------------------------------------
+
+  desc "Create test coverage reports"
+  lane :create_coverage_reports do |options|
+
+    output_directory = "build/reports/tests/#{scheme}"
+    xcresult_path = "#{output_directory}/#{scheme}.xcresult"
+    xccov_file_path = "build/action_0.xccovreport"
+
+    unless File.exists?("../#{xcresult_path}")
+      UI.important("File #{xcresult_path} doesn't exists")
+      return
+    end
+
+    export_xcov_report(xcresult_path: xcresult_path)
+
+    if File.exists?("../#{xccov_file_path}")
+      xcov(
+        project: "elite-ios.xcodeproj",
+        scheme: scheme,
+        output_directory: "build/reports/coverage/html/" + scheme,
+        json_report: true,
+        xccov_file_direct_path: ["./#{xccov_file_path}"],
+        exclude_targets: "elite-ios.app"
+      )
+    else
+      UI.important("File #{xccov_file_path} doesn't exists")
+    end
+  end
+
+  private_lane :export_xcov_report do |options|
+    Dir.chdir("..") do
+      parser = XCResult::Parser.new(path: options[:xcresult_path])
+      export_xccovreport_paths = parser.export_xccovreports(destination: './build')
+    end
+  end
+end
