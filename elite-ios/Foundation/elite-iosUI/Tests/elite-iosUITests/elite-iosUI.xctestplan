@@ -14,9 +14,9 @@
   "testTargets" : [
     {
       "target" : {
-        "containerPath" : "container:Packages\/elite-iosUI",
-        "identifier" : "elite-iosUITests",
-        "name" : "elite-iosUITests"
+        "containerPath" : "container:Foundation\/elite-iosUI",
+        "identifier" : "eliteiosUITests",
+        "name" : "eliteiosUITests"
       }
     }
   ],

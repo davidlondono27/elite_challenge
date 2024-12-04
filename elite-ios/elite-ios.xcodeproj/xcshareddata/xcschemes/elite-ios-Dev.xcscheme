@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B51EDD732C5AD1DC00377356"
-               BuildableName = "elite-ios.app"
-               BlueprintName = "elite-ios"
+               BuildableName = "eliteios.app"
+               BlueprintName = "eliteios"
                ReferencedContainer = "container:elite-ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,8 +40,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B51EDD842C5AD1DE00377356"
-               BuildableName = "elite-iosTests.xctest"
-               BlueprintName = "elite-iosTests"
+               BuildableName = "eliteiosTests.xctest"
+               BlueprintName = "eliteiosTests"
                ReferencedContainer = "container:elite-ios.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -73,8 +73,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B51EDD732C5AD1DC00377356"
-            BuildableName = "elite-ios.app"
-            BlueprintName = "elite-ios"
+            BuildableName = "eliteios.app"
+            BlueprintName = "eliteios"
             ReferencedContainer = "container:elite-ios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -90,8 +90,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B51EDD732C5AD1DC00377356"
-            BuildableName = "elite-ios.app"
-            BlueprintName = "elite-ios"
+            BuildableName = "eliteios.app"
+            BlueprintName = "eliteios"
             ReferencedContainer = "container:elite-ios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

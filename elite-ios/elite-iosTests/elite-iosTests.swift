@@ -1,6 +1,6 @@
 //
-//  elite-iosTests.swift
-//  elite-iosTests
+//  eliteiosTests.swift
+//  eliteiosTests
 //
 //  Created by David Londono on 03/12/2024.
 //  Copyright © 2024 elite-ios. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-final class elite-iosTests: XCTestCase {
+final class eliteiosTests: XCTestCase {
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }

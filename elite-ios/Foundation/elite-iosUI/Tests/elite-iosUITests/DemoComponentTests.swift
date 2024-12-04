@@ -1,13 +1,13 @@
 //
 //  DemoComponentTests.swift
-//  elite-iosUITests
+//  eliteiosUITests
 //
 //  Created by David Londono on 03/12/2024.
 //  Copyright © 2024 elite-ios. All rights reserved.
 //
 
 import SwiftUI
-@testable import elite-iosUI
+@testable import eliteiosUI
 import TestingUtilities
 
 // swiftlint:disable static_over_final_class
