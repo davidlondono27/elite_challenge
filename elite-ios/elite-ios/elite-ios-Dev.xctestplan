@@ -47,23 +47,9 @@
   "testTargets" : [
     {
       "target" : {
-        "containerPath" : "container:Foundation\/Common",
-        "identifier" : "CommonTests",
-        "name" : "CommonTests"
-      }
-    },
-    {
-      "target" : {
         "containerPath" : "container:Foundation\/DataLayer",
         "identifier" : "DataLayerTests",
         "name" : "DataLayerTests"
-      }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:Foundation\/DomainLayer",
-        "identifier" : "DomainLayerTests",
-        "name" : "DomainLayerTests"
       }
     },
     {
@@ -75,9 +61,9 @@
     },
     {
       "target" : {
-        "containerPath" : "container:Foundation\/elite-iosUI",
-        "identifier" : "elite-iosUITests",
-        "name" : "elite-iosUITests"
+        "containerPath" : "container:Features\/FeatureDemo",
+        "identifier" : "FeatureDemoTests",
+        "name" : "FeatureDemoTests"
       }
     },
     {
@@ -89,9 +75,23 @@
     },
     {
       "target" : {
-        "containerPath" : "container:Features\/FeatureDemo",
-        "identifier" : "FeatureDemoTests",
-        "name" : "FeatureDemoTests"
+        "containerPath" : "container:Foundation\/Common",
+        "identifier" : "CommonTests",
+        "name" : "CommonTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Foundation\/DomainLayer",
+        "identifier" : "DomainLayerTests",
+        "name" : "DomainLayerTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Foundation\/elite-iosUI",
+        "identifier" : "eliteiosUITests",
+        "name" : "eliteiosUITests"
       }
     }
   ],

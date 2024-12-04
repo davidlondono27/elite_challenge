@@ -3,9 +3,10 @@
 ## Requirements
 - **Xcode**: 16.0  
 - **Swift**: 6.0  
+- **iOS**: 16.4 or higher
 - **RVM**: 1.29.12  
-- **Ruby**: 3.0.5  
-- **Bundler**: 2.2.33  
+- **Ruby**: 3.0.7  
+- **Bundler**: 2.2.33    
 
 ---
 
@@ -20,6 +21,7 @@
 ## Herramientas y Frameworks
 - **SwiftLint**: Asegura el cumplimiento de las reglas de programación y estilo.  
 - **Nimble** y **Quick**: Usados para pruebas unitarias y de snapshots.  
+- **SwiftGen**: Usado para la gestión de Assets y Strings sin afectar el peso de la app.  
 
 ---
 

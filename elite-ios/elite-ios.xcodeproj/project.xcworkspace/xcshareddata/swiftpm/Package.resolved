@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ashfurrow/Nimble-Snapshots",
       "state" : {
-        "revision" : "b451df00dea23d727472cffda1c5b19fe93dff96",
-        "version" : "9.7.0"
+        "revision" : "6aba4acd318d2aae8158b5f8829a4329d023ce54",
+        "version" : "9.8.0"
       }
     },
     {
