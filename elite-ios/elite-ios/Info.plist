@@ -6,5 +6,7 @@
 	<string>$(API_BASE_URL)</string>
 	<key>GOOGLEMAPS_APIKEY</key>
 	<string>$(GOOGLEMAPS_APIKEY)</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your location to show relevant information on the map.</string>
 </dict>
 </plist>

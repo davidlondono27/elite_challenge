@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F6A81EB2D015AC2004F37CC /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 6F6A81EA2D015AC2004F37CC /* GoogleMaps */; };
 		B51EDD782C5AD1DC00377356 /* eliteiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51EDD772C5AD1DC00377356 /* eliteiosApp.swift */; };
 		B51EDD7C2C5AD1DE00377356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51EDD7B2C5AD1DE00377356 /* Assets.xcassets */; };
 		B51EDD802C5AD1DE00377356 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51EDD7F2C5AD1DE00377356 /* Preview Assets.xcassets */; };
@@ -58,6 +59,7 @@
 			files = (
 				B54B098F2C5C076E00E486CB /* FeatureDemo in Frameworks */,
 				B59FFC7C2C5BF43000B93A60 /* Common in Frameworks */,
+				6F6A81EB2D015AC2004F37CC /* GoogleMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +201,7 @@
 			packageProductDependencies = (
 				B59FFC7B2C5BF43000B93A60 /* Common */,
 				B54B098E2C5C076E00E486CB /* FeatureDemo */,
+				6F6A81EA2D015AC2004F37CC /* GoogleMaps */,
 			);
 			productName = "elite-ios";
 			productReference = B51EDD742C5AD1DC00377356 /* eliteios.app */;
@@ -253,6 +256,7 @@
 			mainGroup = B51EDD6B2C5AD1DC00377356;
 			packageReferences = (
 				B58BE27D2C5C645200FA94B1 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				6F6A81E92D015AC2004F37CC /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
 			);
 			productRefGroup = B51EDD752C5AD1DC00377356 /* Products */;
 			projectDirPath = "";
@@ -477,6 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "elite-ios/elite-ios.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"elite-ios/Preview Content\"";
@@ -497,7 +502,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -520,6 +525,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "elite-ios/elite-ios.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"elite-ios/Preview Content\"";
@@ -540,7 +546,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -634,6 +640,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6F6A81E92D015AC2004F37CC /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.0;
+			};
+		};
 		B58BE27D2C5C645200FA94B1 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
@@ -645,6 +659,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6F6A81EA2D015AC2004F37CC /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F6A81E92D015AC2004F37CC /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
 		B54B098E2C5C076E00E486CB /* FeatureDemo */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FeatureDemo;
