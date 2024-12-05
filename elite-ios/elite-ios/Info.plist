@@ -6,5 +6,7 @@
 	<string>$(API_BASE_URL)</string>
 	<key>GOOGLEMAPS_APIKEY</key>
 	<string>$(GOOGLEMAPS_APIKEY)</string>
+	<key>ELITE_WEB</key>
+	<string>$(ELITE_WEB)</string>
 </dict>
 </plist>

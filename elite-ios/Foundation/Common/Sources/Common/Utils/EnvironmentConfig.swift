@@ -16,4 +16,8 @@ public struct EnvironmentConfig {
     public static var googleMapsAPIKey: String {
         Configuration.value(for: "GOOGLEMAPS_APIKEY")
     }
+
+    public static var eliteWeb: String {
+        Configuration.value(for: "ELITE_WEB")
+    }
 }

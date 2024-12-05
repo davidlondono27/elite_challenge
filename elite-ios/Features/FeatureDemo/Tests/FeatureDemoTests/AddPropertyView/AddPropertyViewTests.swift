@@ -1,8 +1,8 @@
 //
-//  HomeViewTests.swift
+//  AddPropertyViewTests.swift
 //  FeatureDemoTests
 //
-//  Created by David Londono on 03/12/2024.
+//  Created by David Londono on 05/12/2024.
 //  Copyright © 2024 elite-ios. All rights reserved.
 //
 
@@ -11,14 +11,14 @@ import SwiftUI
 import TestingUtilities
 
 // swiftlint:disable static_over_final_class
-final class HomeViewTests: QuickSpecTestBase {
+final class AddPropertyViewTests: QuickSpecTestBase {
     override class func spec() {
         let isRecording: Bool = false
-        describe("HomeView") {
+        describe("AddPropertyView") {
             context("should have expected layout when") {
                 it("init") {
-                    let homeViewModel = HomeViewModel()
-                    let sut = HomeView(viewModel: homeViewModel)
+                    let viewModel = AddPropertyViewModel()
+                    let sut = AddPropertyView(viewModel: viewModel)
                     compareOrRecordSnapshot(sut, isRecording: isRecording)
                 }
             }

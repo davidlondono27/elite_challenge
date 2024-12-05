@@ -46,31 +46,11 @@
   },
   "testTargets" : [
     {
+      "enabled" : false,
       "target" : {
-        "containerPath" : "container:Foundation\/DataLayer",
-        "identifier" : "DataLayerTests",
-        "name" : "DataLayerTests"
-      }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:Foundation\/Networking",
-        "identifier" : "NetworkingTests",
-        "name" : "NetworkingTests"
-      }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:Features\/FeatureDemo",
-        "identifier" : "FeatureDemoTests",
-        "name" : "FeatureDemoTests"
-      }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:Foundation\/TestingUtilities",
-        "identifier" : "TestingUtilitiesTests",
-        "name" : "TestingUtilitiesTests"
+        "containerPath" : "container:elite-ios.xcodeproj",
+        "identifier" : "B51EDD842C5AD1DE00377356",
+        "name" : "eliteiosTests"
       }
     },
     {
@@ -82,9 +62,16 @@
     },
     {
       "target" : {
-        "containerPath" : "container:Foundation\/DomainLayer",
-        "identifier" : "DomainLayerTests",
-        "name" : "DomainLayerTests"
+        "containerPath" : "container:Foundation\/TestingUtilities",
+        "identifier" : "TestingUtilitiesTests",
+        "name" : "TestingUtilitiesTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Foundation\/Networking",
+        "identifier" : "NetworkingTests",
+        "name" : "NetworkingTests"
       }
     },
     {
@@ -92,6 +79,27 @@
         "containerPath" : "container:Foundation\/elite-iosUI",
         "identifier" : "eliteiosUITests",
         "name" : "eliteiosUITests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Foundation\/DomainLayer",
+        "identifier" : "DomainLayerTests",
+        "name" : "DomainLayerTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Foundation\/DataLayer",
+        "identifier" : "DataLayerTests",
+        "name" : "DataLayerTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Features\/FeatureDemo",
+        "identifier" : "FeatureDemoTests",
+        "name" : "FeatureDemoTests"
       }
     }
   ],
