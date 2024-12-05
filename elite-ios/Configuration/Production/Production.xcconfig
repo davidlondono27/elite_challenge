@@ -8,3 +8,4 @@
 
 API_BASE_URL = "PRODUCTION"
 GOOGLEMAPS_APIKEY = AIzaSyCeqgXuYGrlKMfKrKqfGCy1ZDzqzqstdPc
+ELITE_WEB = https:/$()/eliteapartments.co

@@ -14,4 +14,3 @@ public final class FeatureDemo {
         return HomeView(viewModel: viewModel)
     }
 }
-

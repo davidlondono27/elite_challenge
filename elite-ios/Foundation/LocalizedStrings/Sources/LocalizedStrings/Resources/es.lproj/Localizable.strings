@@ -1,1 +1,21 @@
-yourTextHere = "Tu texto aquí"; 
+
+add = "Agregar";
+addNewProperty = "Agregar nueva propiedad";
+addProperty = "Agregar propiedad";
+addThePhotos = "Agrega las fotos";
+apartmentHouse = "Apartamento, casa, etc";
+apartmentWithSeaView = "Apartamento con vista al mar";
+bathNumber = "Número de baños";
+bigApartmentWithGoodEnvironment = "Apartamento amplio con un ambiente relajante...";
+description = "Descripción";
+five = "5";
+maxFivePhotos = "Máx. 5 fotos";
+maxPeople = "Máximos de personas";
+one = "1";
+propertyType = "Tipo de propiedad";
+roomsNumber = "Número de habitaciones";
+title = "Titulo";
+two = "2";
+viewProperties = "Ver propiedades";
+welcome = "Bienvenido";
+whatYouWantDo = "¿Que quieres hacer?";

@@ -12,8 +12,12 @@ public struct EnvironmentConfig {
     public static var apiBaseUrl: String {
         Configuration.value(for: "API_BASE_URL")
     }
-    
+
     public static var googleMapsAPIKey: String {
         Configuration.value(for: "GOOGLEMAPS_APIKEY")
+    }
+
+    public static var eliteWeb: String {
+        Configuration.value(for: "ELITE_WEB")
     }
 }

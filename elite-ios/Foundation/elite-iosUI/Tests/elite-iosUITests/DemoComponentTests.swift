@@ -6,8 +6,8 @@
 //  Copyright © 2024 elite-ios. All rights reserved.
 //
 
-import SwiftUI
 @testable import eliteiosUI
+import SwiftUI
 import TestingUtilities
 
 // swiftlint:disable static_over_final_class
@@ -17,14 +17,14 @@ final class DemoComponentTests: QuickSpecTestBase {
         describe("DemoComponent") {
             context("should have expected layout when") {
                 beforeEach {
-                    // TODO: REMOVE THIS YOU DON'T NEED.
+                    // MARK: REMOVE THIS YOU DON'T NEED.
                 }
                 it("init") {
                     let sut = DemoComponent()
                     compareOrRecordSnapshot(sut, isRecording: isRecording)
                 }
                 afterEach {
-                    // TODO: REMOVE THIS YOU DON'T NEED.
+                    // MARK: REMOVE THIS YOU DON'T NEED.
                 }
             }
         }
