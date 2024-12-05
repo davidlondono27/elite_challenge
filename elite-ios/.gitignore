@@ -60,7 +60,3 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
-*.DS_Store
-elite-ios/DerivedData
-elite-ios/SourcePackages
-elite-ios/build
