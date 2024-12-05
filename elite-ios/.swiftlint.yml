@@ -1,0 +1,443 @@
+disabled_rules: # rule identifiers to exclude from running
+
+  # Current implementation triggers on system APIs. Disabling until rule is configurable to fix this.
+  # An optional collection can have two "empty" states: nil and empty.
+  # If nil and empty are to mean different things, consider modeling it differently using an enum with associated values.
+  - discouraged_optional_collection
+
+  - explicit_acl
+  - explicit_top_level_acl
+
+  # Unclear on what it enforces
+  - extension_access_modifier
+
+
+  # Functions with closures followed by a parenthesis trigger this warning.
+  - multiline_arguments_brackets
+  
+  # Arbitrary restriction.
+  - multiline_literal_brackets
+  
+  # Arbitrary restriction.
+  - multiline_parameters_brackets
+
+  # There are cases where you may want to declare the string enum value explicitly
+  - redundant_string_enum_value
+
+  # Do not require a deinit function, as it is not always necessary.
+  - required_deinit
+
+  # Naming the parameters can be important for clarity in some instances
+  - trailing_closure
+
+  # For typed parameters in closures, parentheses are required by Swift, making this rule inherently inconsistent.
+  - unneeded_parentheses_in_closure_argument
+
+  # There's a custom rule below on the file for TODOs with links.
+  - todo
+  
+  # Unnecessary whitespace.
+  - vertical_whitespace_between_cases
+
+opt_in_rules: # some rules are only opt-in
+
+  - object_literal
+
+  - number_separator
+
+  - sorted_imports
+
+  - switch_case_on_newline
+
+  - type_name
+
+  - vertical_whitespace_opening_braces
+
+  - xct_specific_matcher
+
+  # https://developer.apple.com/documentation/swift/array/reduce(into:_:)
+  - reduce_into
+
+  - let_var_whitespace
+
+  - implicit_return
+
+  - literal_expression_end_indentation
+
+  - multiline_arguments
+
+  - cyclomatic_complexity
+
+  # Provides consistency in coding style
+  - attributes
+
+  # Provides consistency in coding style and follows modern practices of the language
+  - block_based_kvo
+
+  # Prevents retain cycles
+  - class_delegate_protocol
+
+  # Provides consistency in coding style
+  - closing_brace
+
+  - closure_end_indentation
+
+  # Provides consistency in coding style
+  - closure_parameter_position
+
+  # Provides consistency in coding style
+  - closure_spacing
+
+  # Provides consistency in coding style
+  - colon
+
+  # Provides consistency in coding style
+  - comma
+
+  # Provides consistency in coding style
+  - compiler_protocol_init
+
+  # A more clear and consise way to check if something exists
+  - contains_over_filter_count
+  
+  # A more clear and consise way to check if something exists
+  - contains_over_filter_is_empty
+
+  # A more clear and consise way to check if something exists
+  - contains_over_first_not_nil
+
+  # A more clear and consise way to check if a range exists
+  - contains_over_range_nil_comparison
+  
+  # Provides consistency in coding style and follows modern practices of the language
+  - control_statement
+
+  # Encourages proper memory practices
+  - discarded_notification_center_observer
+
+  # Prevents coder error
+  - discouraged_direct_init
+
+  # A nil bool is a tri-state variable which can be modeled more clearly
+  - discouraged_optional_boolean
+
+  # Imports are not required more than once.
+  - duplicate_imports
+
+  # Prevents coder error
+  - dynamic_inline
+
+  # Provides consistency in coding style
+  - empty_collection_literal
+
+  # Provides consistency in coding style and follows modern practices of the language
+  - empty_count
+
+  # Provides consistency in coding style and brevity.
+  - empty_enum_arguments
+
+  # Provides consistency in coding style and follows modern practices of the language
+  - empty_parameters
+
+  # Provides consistency in coding style
+  - empty_parentheses_with_trailing_closure
+
+  # Provides consistency in coding style and follows modern practices of the language
+  - empty_string
+
+  # Provides consistency in coding style
+  - explicit_init
+
+  # Prevents coder error
+  - fallthrough
+
+  # Encourages better documentation
+  - fatal_error_message
+
+  # Provides consistency
+  - file_header
+
+  # Encourages using the right API to solve a problem
+  - first_where
+
+  # Provides consistency in coding style
+  - flatmap_over_map_reduce
+
+  # Encourages using the right API to solve a problem
+  - for_where
+
+  # Prevents coder error, doesn't crash, makes coder be explicit about their assumptions
+  - force_cast
+
+  # Prevents coder error, doesn't crash, makes coder be explicit about their assumptions
+  - force_try
+
+  # Prevents coder error, doesn't crash, makes coder be explicit about their assumptions
+  - force_unwrapping
+
+  # Provides consistency in coding style and brevity.
+  - implicit_getter
+
+  # Prevents coder error, doesn't crash, makes coder be explicit about their assumptions
+  - implicitly_unwrapped_optional
+
+  # Encourages using the right API to solve a problem
+  - is_disjoint
+
+  # Provides clarity and consistency by using the default parameter
+  - joined_default_parameter
+
+  # Provides consistency in coding style
+  - last_where
+
+  # Provides consistency in coding style
+  - leading_whitespace
+
+  # Provides consistency in coding style and follows modern practices of the language
+  - legacy_cggeometry_functions
+
+  # Provides consistency in coding style and follows modern practices of the language
+  - legacy_constant
+
+  # Provides consistency in coding style and follows modern practices of the language
+  - legacy_constructor
+
+  # Provides consistency in coding style and follows modern practices of the language
+  - legacy_hashing
+
+  # Provides consistency in coding style and follows modern practices of the language
+  - legacy_nsgeometry_functions
+
+  # Usage of proper access level
+  - lower_acl_than_parent
+
+  # Provides consistency in coding style
+  - mark
+
+  # Provides consistency in coding style
+  - multiline_parameters
+
+  # Clarity of code
+  - multiple_closures_with_trailing_closure
+
+  # Provides consistency in coding style
+  - no_space_in_method_call
+
+  # Encourages coder best practices though language feature likely makes this obsolete
+  - notification_center_detachment
+
+  # Provides consistency in coding style
+  - opening_brace
+
+  # Provides consistency in coding style
+  - operator_usage_whitespace
+
+  # Provides consistency in coding style
+  - operator_whitespace
+
+  # Prevents coder error
+  - overridden_super_call
+
+  # Prevents unpredictable behavior
+  - override_in_extension
+
+  # Promotes consistency and reduces duplication.
+  - pattern_matching_keywords
+
+  # UI elements should only be configurable by their owners and not be exposed to others
+  - private_action
+
+  # UI elements should only be configurable by their owners and not be exposed to others
+  - private_outlet
+
+  # Keep internal details from being overexposed
+  - private_over_fileprivate
+
+  # Prevents coder error
+  - private_unit_test
+
+  # Prevents coder error
+  - prohibited_super_call
+
+  # Provides consistency in coding style
+  - protocol_property_accessors_order
+
+  # Provides consistency in coding style and brevity
+  - redundant_discardable_let
+
+  # Provides consistency in coding style and brevity
+  - redundant_nil_coalescing
+
+  # Provides consistency in coding style and brevity
+  - redundant_objc_attribute
+
+  # Provides consistency in coding style and brevity
+  - redundant_optional_initialization
+
+  # Provides consistency in coding style and brevity
+  - redundant_void_return
+
+  # Provides consistency in coding style
+  - required_enum_case
+
+  # Provides consistency in coding style
+  - return_arrow_whitespace
+
+  # Provides consistency in coding style
+  - shorthand_operator
+
+  # There should be only XCTestCase per file
+  - single_test_class
+
+  # Provides consistency and clarity in coding style and is less code
+  - sorted_first_last
+
+  # Provides consistency in coding style
+  - statement_position
+
+  # Provides cleaniness of code
+  - superfluous_disable_command
+
+  # Provides consistency in coding style
+  - switch_case_alignment
+
+  # Provides consistency in coding style and follows modern practices of the language
+  - syntactic_sugar
+
+  # Provides consistency in coding style and follows modern practices of the language
+  - trailing_comma
+
+  # Provides consistency in coding style
+  - trailing_newline
+
+  # Provides consistency in coding style and follows modern practices of the language
+  - trailing_semicolon
+
+  # Provides consistency in coding style and brevity
+  - unneeded_break_in_switch
+
+  # Provides consistency in coding style and brevity
+  - unused_control_flow_label
+
+  # Provides consistency in coding style and brevity
+  - unused_closure_parameter
+
+  # Provides consistency in coding style and brevity
+  - unused_enumerated
+
+  # Provides consistency in coding style and brevity
+  - unused_optional_binding
+
+  # Avoids issues where the setter is not using the value passed in.
+  - unused_setter_value
+
+  # Prevents coder error
+  - valid_ibinspectable
+
+  # Provides consistency in coding style
+  - vertical_parameter_alignment
+
+  # Provides consistency in coding style
+  - vertical_parameter_alignment_on_call
+
+  # Provides consistency in coding style
+  - vertical_whitespace
+  
+  # Provides consistency in coding style
+  - vertical_whitespace_closing_braces
+
+  # Provides consistency in coding style and follows modern practices of the language
+  - void_return
+
+  # Prevents retain cycles and coder error
+  - weak_delegate
+
+  # Encourages better documentation
+  - xctfail_message
+
+  # Provides consistency in coding style
+  - yoda_condition
+
+  # Encourages documentation
+  - custom_todo
+  
+  # Provides consistency in coding style.
+  - reduce_boolean
+  
+  # == is not used for NSObject comparison, and could lead to confusion.
+  - nsobject_prefer_isequal
+  
+  # Prevents issues with using unowned.
+  - unowned_variable_capture
+  
+  # Ensures all enums can be switched upon.
+  - duplicate_enum_cases
+  
+  # Provides consistency in coding style.
+  - legacy_multiple  
+
+included:
+  - Rotoplas
+  - RotoplasTests
+  - Foundation
+  - Features
+
+excluded:
+  - "**/*.generated.swift"
+  - "**/Package.swift"
+  - SourcePackages
+  - DerivedData
+  - fastlane
+  - build
+  - Configuration
+
+
+file_header:
+  required_pattern: |
+                    \/\/
+                    \/\/  .*?
+                    \/\/  .*?
+                    \/\/
+                    \/\/  Created by .*? on (\d{2})\/(\d{2})\/(\d{4}).
+                    \/\/  Copyright (©|\(c\)) \d{4} .*?\. All rights reserved\.
+                    \/\/
+
+attributes:
+  always_on_same_line: 
+    ["@IBAction", "@IBSegueAction", "@NSManaged", "@discardableResult", "@escaping", "@objc", "@Environment", "@AppStorage", "@UIApplicationDelegateAdaptor", ]
+  always_on_line_above:
+    ["@ViewBuilder", "@Root", "@Route", "@SnackbarComponent", "@AlertComponent", "@propertyWrapper"]
+
+line_length:
+  warning: 150
+  error: 200
+
+identifier_name:
+  min_length:
+    warning: 3
+    error: 2
+  max_length:
+    warning: 50
+    error: 60
+
+type_name:
+  min_length:
+    warning: 3
+    error: 0
+  max_length:
+    warning: 60
+    error: 200
+
+custom_rules:
+  force_https:
+    name: "Force HTTPS over HTTP"
+    regex: "((?i)http(?!s))"
+    match_kinds: string
+    message: "HTTPS should be favored over HTTP"
+    severity: warning
+  custom_todo:
+    name: "TODO Violation"
+    regex: "(TODO).(?!.*(https&)).(?!.*issue)"
+    match_kinds: comment
+    message: "TODOs must include a link to the issue."
+    severity: warning

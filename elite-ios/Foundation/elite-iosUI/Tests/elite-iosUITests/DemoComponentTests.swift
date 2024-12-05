@@ -6,8 +6,8 @@
 //  Copyright © 2024 elite-ios. All rights reserved.
 //
 
-import SwiftUI
 @testable import eliteiosUI
+import SwiftUI
 import TestingUtilities
 
 // swiftlint:disable static_over_final_class

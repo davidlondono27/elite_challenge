@@ -13,6 +13,7 @@ final class LocationPermission: NSObject, Permission {
     var type: AppPermission = .location
 
     private typealias LocationPermissionThrowingContinuation = CheckedContinuation<Bool, Error>
+
     private var locationPermissionThrowingContinuation: LocationPermissionThrowingContinuation?
 
     fileprivate var locationManager = CLLocationManager()

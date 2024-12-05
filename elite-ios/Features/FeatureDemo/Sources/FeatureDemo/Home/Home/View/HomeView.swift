@@ -7,6 +7,7 @@
 //
 
 import LocalizedStrings
+import MapKit
 import SwiftUI
 import Theme
 
@@ -18,13 +19,16 @@ struct HomeView<ViewModel>: View where ViewModel: HomeViewModelProtocol {
     }
 
     var body: some View {
-        Image.logo
-            .frame(width: 200)
-        Text(L10n.yourTextHere)
-            .foregroundStyle(Color.exampleColor)
+        VStack {
+            Image.logo
+                .frame(width: 50)
+            Text(L10n.welcome)
+                .foregroundStyle(Color.azulPrincipal)
+                .fontWeight(.semibold)
+            Divider()
+            Text(L10n.whatYouWantDo)
+                .foregroundStyle(Color.azulPrincipal)
+                .fontWeight(.semibold)
+        }
     }
-}
-
-#Preview {
-    HomeView(viewModel: HomeViewModel())
 }
